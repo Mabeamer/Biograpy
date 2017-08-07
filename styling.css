@@ -30,6 +30,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 /*                reset end                    */
+
+
+
+
 body {
 	line-height: 1;
 }
@@ -88,12 +92,17 @@ ul#navigation > li {
 ul#navigation > li > a:hover{
   background-color: grey;
 }
+
+
+
 /* wrapper for all sites  */
 div.pannel-wrapper{
 	width:100%;
-	height:700px;
+	height:1000px;
 	border:1px;
 }
+
+
 /*  index CSS  */
 p#welcome{
 	text-align: center;
@@ -116,24 +125,24 @@ div.pannel-left{
 	padding: 25px;
 }
 /*	BIOGRAPHY CSS			*/
-img#profile {
+#profile {
     border-radius: 50%;
-
 }
 
-h1#title{
+#title{
 	text-align: center;
 	font-weight: bold;
 }
 
 div.bio{
+	margin: 0 auto;
+	position: relative;
 	width:40%;
 	height:300px;
-  display:inline-block;
 	border: 10px solid grey;
-	padding: 25px;
+	padding: 20px 20px 20px 20px;
 }
-img#profile{
+#profile{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -142,14 +151,25 @@ img#profile{
 
 
 /* GALLARY */
-img.img1 {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-		width: 50px;
-		height: 50px;
+.gallery{
+	width:100%;
+	height:200px;
 }
-
+figure {
+  float: left;
+  width: 30%;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  text-indent: 0;
+  border: thin silver solid;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+#caption{
+	font-weight: bold;
+	text-align: center;
+}
 
 
 /* contact */
@@ -158,19 +178,59 @@ form {
 }
 
 /* Resume  */
+h1#resume{
+	font-weight:bold;
+	text-align:center;
+}
 ul#skill{
-	 display: inline-block;
-	 text-align: center;
+	 xdisplay: inline-block;
 }
 ul#strength{
-	 display: inline-block;
+	 xdisplay: inline-block;
 }
+i#range{
+
+}
+span#years{
+	padding-left: 40px;
+}
+h1#catagory{
+	font-weight: bold;
+}
+i#catagory{
+	font-weight: bold;
+}
+
+
+/* code pen*/
+div.pannel-pen{
+	width:20%;
+	height:200px;
+  display:inline-block;
+	float:right;
+	border: 10px solid grey;
+	padding: 25px;
+
+}
+div.pannel-left-pen{
+	width:20%;
+	height:200px;
+  display:inline-block;
+	float:left;
+	border: 10px solid grey;
+	padding: 25px;
+
+}
+
+
 
 
 
 /*  media query   */
-@media screen and (min-width: 768px){
-
+@media screen and (min-width: 699px){
+.pannel > .pannel-wrapper {
+	width: 100%;
+}
 
 
 

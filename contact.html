@@ -2,7 +2,7 @@
 <head>
   <title>Contact</title>
   <link rel="stylesheet" href="styling.css">
-  <script src="scrip.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
 </head>
 <body>
   <header>
@@ -15,27 +15,32 @@
       <li><a href="Biography.html">Biography</a></li>
       <li><a href="Resume.html">Resume</a></li>
       <li><a href="Codepen.html">Codepen</a></li>
-      <li><a href="Gallary.html">Gallary</a></li>
+      <li><a href="gallery.html">gallery</a></li>
       <li><a href="Contact.html">Contact</a></li>
     </ul>
   </nav>
   <section>
-    <form onsubmit="return formCheck()">
+    <form onSubmit="formCheck()">
      <fieldset id="field">
       <legend>Contact Me!</legend>
       <label for="fname">First Name: </label>
-      <input type="text" name="fname" id="fname" class="userForm" />
+      <input type="text" name="fname" class="userForm" id="fname" />
+
       <label for="lname">Last Name: </label>
-      <input type="text" name="lname" class="userForm" />
+      <input type="text" name="lname" class="userForm" id="lname" />
+
       <label for="email">Email: </label>
-      <input type="email" name="email" class="userForm" />
+      <input type="email" name="email" class="userForm" id="email" />
+
       <label for="telephone">Phone Number: </label>
-      <input type="tel" name="telephone" class="userForm" />
+      <input type="tel" name="telephone" class="userForm" id="telephone" />
+
       <label for="company">Company: </label>
-      <input type="text" name="company" class="userForm" />
+      <input type="text" name="company" class="userForm" id="company" />
+
+      <input type="submit" name="submit" id="submit" />
      </fieldset>
     <textarea  placeholder="Questions and Comments go here!" rows="4" cols="50"></textarea>
-    <button type="submit" form="submit" value="Submit" onsubmit="return formCheck()">Submit</button>
     </form>
   </section>
   <footer id="footer">
