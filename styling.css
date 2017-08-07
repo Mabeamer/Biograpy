@@ -227,14 +227,12 @@ div.pannel-left-pen{
 
 
 /*  media query   */
-@media screen and (min-width: 699px){
-.pannel > .pannel-wrapper {
-	width: 100%;
-}
-
-
-
-
-
+@media screen and (max-width: 699px){
+	div.pannel {
+		margin-top: 20px;
+		height: 400px;
+	}
+	div.pannel-left{
+	}
 
 }
