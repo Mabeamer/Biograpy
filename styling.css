@@ -102,6 +102,12 @@ div.pannel-wrapper{
 	border:1px;
 }
 
+/*banner*/
+#banner{
+  height: 10%;
+  width: 100%;
+
+}
 
 /*  index CSS  */
 p#welcome{
