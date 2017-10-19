@@ -51,4 +51,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('#r2hlogo').delay(550).fadeIn('slow');
 });
+$(document).ready(function(){
+  $('.contactForm').delay(250).fadeIn('slow');
+});
 console.log("testing");

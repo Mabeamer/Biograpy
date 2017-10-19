@@ -3,7 +3,7 @@
 <head>
   <title>Contact</title>
   <link rel="stylesheet" href="styling.css">
-  <script src="script.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
   <nav class="links">
@@ -16,32 +16,36 @@
     </ul>
   </nav>
   <section>
-    <form onSubmit="formCheck()">
-     <fieldset id="field">
-      <legend>Contact Me!</legend>
-      <label for="fname">First Name: </label>
-      <input type="text" name="fname" class="userForm" id="fname" />
+    <div class="contactForm">
+      <form onSubmit="formCheck()">
+       <fieldset id="field">
+        <legend>Questions or Concerns?</legend>
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" class="userForm" id="fname" />
 
-      <label for="lname">Last Name: </label>
-      <input type="text" name="lname" class="userForm" id="lname" />
+        <label for="lname">Last Name: </label>
+        <input type="text" name="lname" class="userForm" id="lname" />
 
-      <label for="email">Email: </label>
-      <input type="email" name="email" class="userForm" id="email" />
+        <label for="email">Email: </label>
+        <input type="email" name="email" class="userForm" id="email" />
 
-      <label for="telephone">Phone Number: </label>
-      <input type="tel" name="telephone" class="userForm" id="telephone" />
+        <label for="telephone">Phone Number: </label>
+        <input type="tel" name="telephone" class="userForm" id="telephone" />
 
-      <label for="company">Company: </label>
-      <input type="text" name="company" class="userForm" id="company" />
-
+       </fieldset>
+      <textarea  placeholder="Leave a comment." rows="4" cols="50"></textarea>
       <input type="submit" name="submit" id="submit" />
-     </fieldset>
-    <textarea  placeholder="Questions and Comments go here!" rows="4" cols="50"></textarea>
-    </form>
+      </form>
+    </div>
   </section>
   <footer id="footer">
   <a href="http://road2hire.org/">Road2Hire</a>
   <a href="https://www.linkedin.com/in/markus-a-beamer-528925137/">Linkin</a>
 </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
