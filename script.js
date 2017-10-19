@@ -35,3 +35,20 @@ function test() {
   console.log(event);
   event.preventDefault();
 }
+
+// $(document).ready(function() {
+//   $('.pannel').slideDown();
+// });
+$(document).ready(function(){
+  $('.pannel').delay(450).fadeIn('slow');
+});
+$(document).ready(function(){
+  $('.pannel-left').delay(350).fadeIn('slow');
+});
+$(document).ready(function(){
+  $('#profileimg').delay(580).fadeIn('slow');
+});
+$(document).ready(function(){
+  $('#r2hlogo').delay(550).fadeIn('slow');
+});
+console.log("testing");

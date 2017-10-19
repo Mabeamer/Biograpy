@@ -34,9 +34,6 @@ footer, header, hgroup, menu, nav, section {
 
 
 
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -53,7 +50,10 @@ table {
 	border-spacing: 0;
 }
 body{
-  background-color: #E9D3BE;
+  	background-color: black;
+  	color: white;
+   	font-family: verdana;
+	font-size: 13px;
 
 }
 
@@ -61,40 +61,50 @@ ul {
 	padding-left: 30px;
 	list-style: circle;
 }
-#banner{
+/*#banner{
   height: 10%;
   width: 100%;
 
-}
-
+}`
+*/
 #footer{
   padding-left: 46%;
-  background-color: black;
+  background-color: white;
 }
 
 ul#navigation {
   width:100%;
-  background-color: red;
+  background-color: rgb(242, 242, 242);
   overflow: auto;
-  list-style: none;
+  list-style-type: none;
 	padding-left: 0;
+	text-decoration: none;
 }
 
 ul#navigation > li {
-  box-sizing:border-box;
-  width: 16.666%;
+	font-size: 12px;
   display: block;
   float: left;
   padding: 10px;
-  background-color: #E9D3BE;
-  text-align: center;
+  background-color: rgb(242, 242, 242);
 }
-ul#navigation > li > a:hover{
-  background-color: grey;
+ul#navigation  li  a{
+	text-decoration: none;
 }
-
-
-
+ul#navigation  li  a:hover{
+  	color: rgba(0,0,0,.6);
+}
+#navigation li a:visited{
+	color: black;
+}
+#nameplate{
+	color: black;
+	float: right;
+	font-size: 30px;
+	margin-right: 50px;
+	margin-top: 2px;
+	font-family: 'Orbitron', sans-serif;
+}
 /* wrapper for all sites  */
 div.pannel-wrapper{
 	width:100%;
@@ -109,25 +119,41 @@ div.pannel-wrapper{
 }
 
 /*  index CSS  */
-p#welcome{
+#welcome{
 	text-align: center;
+	font-size: 30px;
+	margin-top: 5px;
 }
 div.pannel{
 	width:40%;
 	height:300px;
-  display:inline-block;
-	float:right;
-	border: 10px solid grey;
+  	display:none;
+  	margin-left: 695px;
+	/*border: 1px solid grey;*/
 	padding: 25px;
 
 }
 div.pannel-left{
 	width:40%;
 	height:300px;
-  display:inline-block;
-	float:left;
-	border: 10px solid grey;
+  	display:none;
+  	margin-left: 92px;
+	/*border: 1px solid grey;*/
 	padding: 25px;
+}
+#profileimg{
+	float: right;
+	margin-right: 150px;
+	margin-top: 45px;
+	border-radius: 50%;
+	display: none;
+}
+#r2hlogo{
+	float: left;
+	width: 500px;
+	height: 200px;
+	margin-left: 110px;
+	display: none;
 }
 /*	BIOGRAPHY CSS			*/
 #profile {
@@ -144,7 +170,7 @@ div.bio{
 	position: relative;
 	width:40%;
 	height:300px;
-	border: 10px solid grey;
+	border: 5px solid grey;
 	padding: 20px 20px 20px 20px;
 }
 #profile{
