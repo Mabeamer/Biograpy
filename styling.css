@@ -119,6 +119,10 @@ ul#navigation  li  a:hover{
 	margin-top: 2px;
 	font-family: 'Orbitron', sans-serif;
 }
+.nameBanner{
+	float: right;
+	color: white;
+}
 /* wrapper for all sites  */
 div.pannel-wrapper{
 	width:100%;
@@ -150,7 +154,7 @@ div.pannel-left{
 }
 #profileimg{
 	float: right;
-	margin-right: 150px;
+	margin-right: 350px;
 	margin-top: 45px;
 	display: none;
 }
@@ -260,26 +264,16 @@ input, label, select{
 	text-decoration: underline;
 	font-size: 15px;
 }
-/* code pen*/
-div.pannel-pen{
-	width:20%;
+/* codepen*/
+/*div.pannel{
+	width: 500px;
 	height:200px;
 	display:inline-block;
-	float:right;
 	border: 10px solid grey;
 	padding: 25px;
 
 }
-div.pannel-left-pen{
-	width:20%;
-	height:200px;
-	display:inline-block;
-	float:left;
-	border: 10px solid grey;
-	padding: 25px;
-
-}
-
+*/
 
 
 
