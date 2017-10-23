@@ -1,54 +1,108 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Resume</title>
-  <link rel="stylesheet" href="styling.css">
+  <link href="styling.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
   <nav class="links">
     <ul id="navigation">
-      <li><a href="index.html">Homepage</a></li>
-      <li><a href="Resume.html">Resume</a></li>
-      <li><a href="Codepen.html">Codepen</a></li>
-      <li><a href="Contact.html">Contact</a></li>
-      <p id="nameplate">Beamer</p>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="Resume.html">Resume</a>
+      </li>
+      <li>
+        <a href="Codepen.html">Codepen</a>
+      </li>
+      <li>
+        <a href="Contact.html">Contact</a>
+      </li>
+        <p id="lnameplate">Beamer</p><p id="nameplate">Markus</p>
     </ul>
   </nav>
+
   <section>
-    <h1 id="resume">Resume</h1>
-      <div class="resumeContainer">
-      <div class="skill range">
-        <i id="catagory">Skills range from 1 - weak to 10 - very strong</i>
-        <div class="programContainer">
-          <ul class="program">
-            <li><span id="program">Sony Vegas</span></li>
-            <li><span id="program">HTML</span></li>
-            <li><span id="program">CSS</span></li>
-            <li><span id="program">Javascript</span></li>
-            <li><span id="program">Photoshop</span></li>
-          </ul>
-          <ul class="skillRange">
-            <li>6 - Average</li>
-            <li>4 - Below Average</li>
-            <li>3 - Beginner</li>
-            <li>2 - Beginner</li>
-            <li>3 - Beginner</li>
-          </ul>
-        </div>
-      </div>
-      <h1 id="catagory">Education</h1>
-        <p>Philip o Berry graduate</p>
-      <h1 id="catagory">Points of Intrest</h1>
-        <ul>
-          <li>BDPA</li>
-            <p>Participated in a program that teaches VB.Net and Database programming to High School Students</p>
-          <li>I run a small Youtube channel, mainly focused on games and modifications to make them look “movie like”</li>
+    <p id="resumeBanner">The Beamer Resume</p>
+    <div class="resumeContainer">
+      <p class="resumeLabel">Summary</p>
+      <div class=skillHolder>
+        <ul class="program">
+          <li class="title">Skill</li>
+          <li>Sony Vegas</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Photoshop</li>
         </ul>
-    </section>
-  </div>
+        <ul class="skillRange">
+          <li class="title">Strength (0 - 10)</li>
+          <li>6 - Average</li>
+          <li>4 - Below Average</li>
+          <li>3 - Beginner</li>
+          <li>2 - Beginner</li>
+          <li>3 - Beginner</li>
+        </ul>
+        <ul class="yearRange">
+          <li class="title">Years</li>
+          <li>3 Years</li>
+          <li>2 Years</li>
+          <li>2 Years</li>
+          <li>1 Years</li>
+          <li>2 Years</li>
+        </ul>
+      </div>
+      <p class="resumeLabel">Experience</p>
+      <div class="catagory">
+        <p>Internship at Johnson C. Smith - Counselor Assistant - (June 2016 - August 2016)</p>
+        <ul>
+          <li>Helped teach children ranging from 4th grade to 6th grade learn how to build and program Lego robots.</li>
+          <li>Learned how to keep children focused through an intense learning day.</li>
+        </ul>
+        <p>Road To Hire - Tech Academy - (June 2017 - Current)</p>
+        <ul>
+          <li>Learning programming languages such as HTML, Javascript, CSS, and PHP.</li>
+          <li>Attending professional development courses to learn how to act in the work force.</li>
+        </ul>
+      </div>
+      <p class="resumeLabel">Education</p>
+      <div class="catagory">
+        <p>High School Graduate - Diploma from Philip O. Berry Academy of Technology</p>
+        <p id="underline">Relevant Course Work</p>
+        <p>Computer Programming 1</p>
+        <ul>
+          <li>Sophomore Year - Worked with Visual Studio creating small apps.</li>
+        </ul>
+        <p>Honors Ecommerce 1 & 2</p>
+        <ul>
+          <li>Junior Year - Worked with HTML and Photoshop learning how to create an E-commerce website.</li>
+        </ul>
+        <p>Computer Engineering Tech 1</p>
+        <ul>
+          <li>Senior Year - Worked with hardware learning about parts and building computers.</li>
+        </ul>
+      </div>
+      <p class="resumeLabel">Points of Intrest</p>
+      <div class="catagory">
+        <p>BDPA - Black Data Processing Associates</p>
+        <ul>
+          <li>
+            Participated in a program that teaches VB.Net and Database programming to High School Students.
+          </li>
+        </ul>
+        <p>Run a small Youtube channel, mainly focused on games and modifications to make them look “movie like”</p>
+      </div>
+    </div>
+  </section>
   <footer id="footer">
-    <a href="http://road2hire.org/">Road2Hire</a>
-    <a href="https://www.linkedin.com/in/markus-a-beamer-528925137/">Linkin</a>
+    <a href="http://road2hire.org/">RoadToHire</a> <a href="https://www.linkedin.com/in/markus-a-beamer-528925137/">Linkedin</a>
   </footer>
+      <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="script.js" type="text/javascript"></script>
 </body>
 </html>

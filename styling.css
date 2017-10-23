@@ -50,10 +50,11 @@ table {
 	border-spacing: 0;
 }
 body{
-  	background-color: black;
+  	background-color: rgb(26, 26, 26);
+
   	color: white;
    	font-family: verdana;
-	font-size: 13px;
+	font-size: 15px;
 
 }
 
@@ -61,12 +62,13 @@ ul {
 	padding-left: 30px;
 	list-style: circle;
 }
-/*#banner{
-  height: 10%;
-  width: 100%;
 
-}`
-*/
+
+*{
+	box-sizing:border-box;
+}
+
+
 #footer{
 	width: 100%;
   background-color: white;
@@ -76,7 +78,7 @@ ul {
 
 ul#navigation {
   width:100%;
-  background-color: rgb(242, 242, 242);
+  background-color: #bababa;
   overflow: auto;
   list-style-type: none;
 	padding-left: 0;
@@ -88,13 +90,14 @@ ul#navigation > li {
   display: block;
   float: left;
   padding: 10px;
-  background-color: rgb(242, 242, 242);
+  background-color: #bababa;
 }
 ul#navigation  li  a{
 	text-decoration: none;
 }
 ul#navigation  li  a:hover{
-  	color: rgba(0,0,0,.6);
+  	color: rgba(0,0,0,.7);
+  	border-bottom: 1px solid white;
 }
 #navigation li a:visited{
 	color: black;
@@ -106,18 +109,20 @@ ul#navigation  li  a:hover{
 	margin-right: 50px;
 	margin-top: 2px;
 	font-family: 'Orbitron', sans-serif;
+	color: rgba(0,0,0,.5);
+}
+#lnameplate{
+	color: black;
+	float: right;
+	font-size: 30px;
+	margin-right: 50px;
+	margin-top: 2px;
+	font-family: 'Orbitron', sans-serif;
 }
 /* wrapper for all sites  */
 div.pannel-wrapper{
 	width:100%;
-	height:1000px;
 	border:1px;
-}
-
-/*banner*/
-#banner{
-  height: 100px;
-  width: 100%;
 }
 
 /*  index CSS  */
@@ -130,7 +135,7 @@ div.pannel{
 	width:40%;
 	height:300px;
   	display:none;
-  	margin-left: 695px;
+  	margin-left: 780px;
 	/*border: 1px solid grey;*/
 	padding: 25px;
 
@@ -139,7 +144,7 @@ div.pannel-left{
 	width:40%;
 	height:300px;
   	display:none;
-  	margin-left: 92px;
+  	margin-left: 90px;
 	/*border: 1px solid grey;*/
 	padding: 25px;
 }
@@ -147,7 +152,6 @@ div.pannel-left{
 	float: right;
 	margin-right: 150px;
 	margin-top: 45px;
-	border-radius: 50%;
 	display: none;
 }
 #r2hlogo{
@@ -167,51 +171,100 @@ form {
  	width: 500px;
  	height: 500px;
  	overflow: hidden;
- 	border: solid black 5px;
  	margin: 0 auto;
  	text-align: center;
  	display: none;
+
+ 	margin-top: 50px;
 }
 input, label, select{
   display: block;
   margin: auto;
 }
+.catagory{
+	border: solid white 2px;
+	background-color: white;
+}
 
 /* Resume */
+#resumeBanner{
+	margin: 0 auto;
+	width: 200px;
+	margin-top: 20px;
+	display: none;
+}
+.resumeLabel{
+	color: black;
+	background-color: white;
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 5px;
+}
 .resumeContainer{
-	border: 1px solid white;
+	width: 700px;
+	height: 750px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: white;
+	display:none;
 }
-h1#resume{
-	font-weight:bold;
-	text-align:center;
+.resumeContainer li{
+	color: black;
+	background-color: white;
 }
-.programContainer{
-	border: 1px solid white;
-	width: 300px;
-	height: 100px;
+.resumeContainer ul{
+	color: black; 
+	background-color: white;
+	/*border: solid purple 2px;*/
+}
+.program{
+	width: 33%;
+	float:left;
+	border: solid black 1px;
+}
+.title{
+	font-weight: bold;
+	list-style-type: none;
 }
 .skillRange{
+	width: 33%;
 	float: left;
+	border: solid black 1px;
+	list-style-type: none;
 }
-i#range{
-
+.yearRange{
+	width: 34%;
+	float: left;
+	border: solid black 1px;
+	list-style-type: none;
 }
-span#years{
-	padding-left: 40px;
+.skillHolder{
+	margin: 0 auto;
+	overflow: auto;
+	width: 80%;
+	border: solid black 1px;
 }
-h1#catagory{
-	font-weight: bold;
+.catagory p{
+	color: black;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 14px;
 }
-i#catagory{
-	font-weight: bold;
+.catagory ul{
+	font-size: 12px;
+	margin-left: 40px;
 }
-
-
+#underline{
+	text-decoration: underline;
+	font-size: 15px;
+}
 /* code pen*/
 div.pannel-pen{
 	width:20%;
 	height:200px;
-  display:inline-block;
+	display:inline-block;
 	float:right;
 	border: 10px solid grey;
 	padding: 25px;
@@ -220,7 +273,7 @@ div.pannel-pen{
 div.pannel-left-pen{
 	width:20%;
 	height:200px;
-  display:inline-block;
+	display:inline-block;
 	float:left;
 	border: 10px solid grey;
 	padding: 25px;

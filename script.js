@@ -40,10 +40,10 @@ function test() {
 //   $('.pannel').slideDown();
 // });
 $(document).ready(function(){
-  $('.pannel').delay(450).fadeIn('slow');
+  $('.pannel').delay(350).fadeIn('slow');
 });
 $(document).ready(function(){
-  $('.pannel-left').delay(350).fadeIn('slow');
+  $('.pannel-left').delay(250).fadeIn('slow');
 });
 $(document).ready(function(){
   $('#profileimg').delay(580).fadeIn('slow');
@@ -54,4 +54,9 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.contactForm').delay(250).fadeIn('slow');
 });
-console.log("testing");
+$(document).ready(function(){
+  $('.resumeContainer').delay(250).fadeIn('slow');
+});
+$(document).ready(function(){
+  $('#resumeBanner').delay(300).fadeIn('slow');
+});
